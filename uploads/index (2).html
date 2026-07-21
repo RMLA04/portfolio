@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adolat Gharibshoeva — Computer Science &amp; Cybersecurity</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          wine: '#3A0810',
+          card: '#50131E',
+          cream: '#F5EBE6',
+          gold: '#D4AF37',
+        },
+        fontFamily: {
+          serif: ['Cormorant Garamond', 'serif'],
+          sans: ['DM Sans', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body{ background:#3A0810; color:#F5EBE6; }
+  .hairline{ border-color: rgba(212,175,55,0.28); }
+  .hairline-cream{ border-color: rgba(245,235,230,0.16); }
+  .quote-mark{ font-family:'Cormorant Garamond', serif; line-height:1; }
+  .arch-frame{
+    position:relative;
+    border-radius: 10px;
+    padding: 14px;
+    background: transparent;
+    border: 1px solid rgba(245,235,230,0.55);
+  }
+  .arch-frame::before{
+    content:"";
+    position:absolute; inset:5px;
+    border: 1px solid rgba(212,175,55,0.5);
+    border-radius: 6px;
+    pointer-events:none;
+  }
+  .arch-frame .corner{
+    position:absolute; width:14px; height:14px; border:1px solid rgba(212,175,55,0.75);
+  }
+  .arch-frame .corner.tl{ top:2px; left:2px; border-right:none; border-bottom:none; }
+  .arch-frame .corner.tr{ top:2px; right:2px; border-left:none; border-bottom:none; }
+  .arch-frame .corner.bl{ bottom:2px; left:2px; border-right:none; border-top:none; }
+  .arch-frame .corner.br{ bottom:2px; right:2px; border-left:none; border-top:none; }
+  .arch-frame-inner{
+    border-radius: 4px;
+    overflow:hidden;
+    border: 1px solid rgba(245,235,230,0.6);
+  }
+  .mono-ring{
+    border: 1px solid rgba(212,175,55,0.6);
+  }
+  .mono-ring-inner{
+    border: 1px solid rgba(212,175,55,0.9);
+  }
+  .diamond-accent{
+    width:18px; height:18px; border:1px solid rgba(212,175,55,0.5); transform:rotate(45deg);
+  }
+  .track{ letter-spacing:.18em; }
+  .fine-track{ letter-spacing:.12em; }
+</style>
+</head>
+<body class="antialiased">
+
+<div class="max-w-[1240px] mx-auto px-6 md:px-10">
+
+  <!-- SECTION A: HEADER / HERO -->
+  <header class="pt-14 pb-10 border-b hairline">
+    <div class="flex flex-col md:flex-row gap-10 md:gap-14">
+
+      <!-- Left column: photo -->
+      <div class="w-full md:w-[35%] flex justify-center md:justify-start">
+        <div class="arch-frame w-64 md:w-full max-w-[280px]">
+          <span class="corner tl"></span><span class="corner tr"></span><span class="corner bl"></span><span class="corner br"></span>
+          <div class="arch-frame-inner aspect-[3/4]">
+            <img src="photo_2026-05-20_14-04-42.jpg" alt="Adolat Gharibshoeva" class="w-full h-full object-cover">
+          </div>
+        </div>
+      </div>
+
+      <!-- Right column -->
+      <div class="w-full md:w-[65%] flex flex-col">
+        <div class="flex items-start justify-between gap-6">
+          <h1 class="font-serif uppercase text-cream font-semibold leading-[0.95] tracking-tight text-[38px] sm:text-[50px] md:text-[58px] lg:text-[66px]">
+            Computer Science &amp; Cybersecurity Global Creative
+          </h1>
+          <div class="hidden sm:flex mono-ring rounded-full w-20 h-20 md:w-24 md:h-24 items-center justify-center shrink-0">
+            <div class="mono-ring-inner rounded-full w-[86%] h-[86%] flex items-center justify-center">
+              <span class="font-serif text-2xl md:text-3xl"><span class="text-cream">A</span><span class="text-gold">G</span></span>
+            </div>
+          </div>
+        </div>
+
+        <p class="font-serif italic text-gold text-xl md:text-2xl mt-6">I design secure, impactful digital solutions.</p>
+
+        <div class="mt-6 flex flex-wrap items-center gap-x-3 gap-y-2 text-cream/70 font-sans text-[13px] track uppercase">
+          <span>Adolat Gharibshoeva</span>
+          <span class="text-gold/50">|</span>
+          <span>CS at University of Central Asia</span>
+          <span class="text-gold/50">|</span>
+          <span>From Khorog, GBAO, Tajikistan</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION B: STAT BAR -->
+  <div class="mt-10 md:mt-14">
+    <div class="rounded-full bg-card border hairline px-6 py-6 md:px-14 md:py-8 flex flex-col sm:flex-row items-center justify-between gap-6 sm:gap-4 text-center sm:text-left">
+      <div class="flex items-center gap-4 flex-1 justify-center sm:justify-start">
+        <span class="font-serif text-gold text-3xl md:text-4xl">95%+</span>
+        <span class="font-sans text-cream/70 text-xs md:text-sm track uppercase max-w-[140px]">Python Learning Platform</span>
+      </div>
+      <div class="hidden sm:block w-px h-10 bg-gold/25"></div>
+      <div class="flex items-center gap-4 flex-1 justify-center">
+        <span class="font-serif text-gold text-3xl md:text-4xl">3+</span>
+        <span class="font-sans text-cream/70 text-xs md:text-sm track uppercase max-w-[140px]">Countries Lived &amp; Worked</span>
+      </div>
+      <div class="hidden sm:block w-px h-10 bg-gold/25"></div>
+      <div class="flex items-center gap-4 flex-1 justify-center sm:justify-end">
+        <span class="font-serif text-gold text-3xl md:text-4xl">10+</span>
+        <span class="font-sans text-cream/70 text-xs md:text-sm track uppercase max-w-[140px]">Impactful Tech Projects</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION C: SELECTED WORKS + SERVICES -->
+  <div class="mt-16 md:mt-20 grid grid-cols-1 lg:grid-cols-[70%_30%] gap-12">
+
+    <!-- Selected Works -->
+    <div>
+      <div class="flex items-baseline justify-between mb-7">
+        <h2 class="font-sans font-bold text-gold track uppercase text-sm">Selected Works</h2>
+        <a href="#" class="font-sans text-cream/60 text-xs track uppercase flex items-center gap-2 hover:text-gold transition">View All Projects <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+
+        <!-- Card 1: EdTech -->
+        <div class="bg-card border hairline rounded-lg overflow-hidden flex flex-col">
+          <div class="px-4 pt-4">
+            <span class="font-sans text-[10px] track uppercase text-cream/45">Adolat Gharibshoeva</span>
+          </div>
+          <div class="mx-4 mt-3 mb-4 rounded-md border hairline-cream bg-wine/60 p-3 h-40 flex flex-col gap-2">
+            <div class="flex items-center justify-between">
+              <div class="w-16 h-2 rounded-full bg-gold/50"></div>
+              <div class="w-4 h-4 rounded-full border border-gold/50"></div>
+            </div>
+            <div class="flex-1 grid grid-cols-3 gap-1.5 mt-1">
+              <div class="rounded bg-cream/10 border hairline-cream"></div>
+              <div class="rounded bg-gold/20 border border-gold/30"></div>
+              <div class="rounded bg-cream/10 border hairline-cream"></div>
+            </div>
+            <div class="h-2 rounded-full bg-cream/15 w-3/4"></div>
+            <div class="h-2 rounded-full bg-cream/10 w-1/2"></div>
+          </div>
+          <div class="px-4 pb-5">
+            <p class="font-serif text-cream text-lg leading-tight">Equal Access EdTech Platform</p>
+            <p class="font-sans text-cream/50 text-xs mt-1">E-learning module view</p>
+          </div>
+        </div>
+
+        <!-- Card 2: Mental Health AI -->
+        <div class="bg-card border hairline rounded-lg overflow-hidden flex flex-col">
+          <div class="px-4 pt-4">
+            <span class="font-sans text-[10px] track uppercase text-cream/45">Adolat Gharibshoeva</span>
+          </div>
+          <div class="mx-4 mt-3 mb-4 rounded-md border hairline-cream bg-wine/60 p-3 h-40 flex flex-col justify-end gap-1.5">
+            <div class="flex items-end gap-1.5 h-24">
+              <div class="w-1/6 bg-gold/25 rounded-t h-[40%]"></div>
+              <div class="w-1/6 bg-gold/40 rounded-t h-[65%]"></div>
+              <div class="w-1/6 bg-gold/60 rounded-t h-[45%]"></div>
+              <div class="w-1/6 bg-gold/80 rounded-t h-[80%]"></div>
+              <div class="w-1/6 bg-gold/50 rounded-t h-[55%]"></div>
+              <div class="w-1/6 bg-gold/30 rounded-t h-[35%]"></div>
+            </div>
+            <div class="h-px bg-cream/15 w-full"></div>
+          </div>
+          <div class="px-4 pb-5">
+            <p class="font-serif text-cream text-lg leading-tight">AI for Mental Health Research</p>
+            <p class="font-sans text-cream/50 text-xs mt-1">Data visualization interface</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Job Board -->
+        <div class="bg-card border hairline rounded-lg overflow-hidden flex flex-col">
+          <div class="px-4 pt-4">
+            <span class="font-sans text-[10px] track uppercase text-cream/45">Adolat Gharibshoeva</span>
+          </div>
+          <div class="mx-4 mt-3 mb-4 rounded-md border hairline-cream bg-wine/60 p-3 h-40 flex flex-col gap-2">
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-gold/30 border border-gold/40 shrink-0"></div>
+              <div class="flex-1 space-y-1">
+                <div class="h-1.5 rounded-full bg-cream/20 w-4/5"></div>
+                <div class="h-1.5 rounded-full bg-cream/10 w-3/5"></div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-cream/15 border border-cream/20 shrink-0"></div>
+              <div class="flex-1 space-y-1">
+                <div class="h-1.5 rounded-full bg-cream/20 w-3/5"></div>
+                <div class="h-1.5 rounded-full bg-cream/10 w-2/5"></div>
+              </div>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded-full bg-gold/30 border border-gold/40 shrink-0"></div>
+              <div class="flex-1 space-y-1">
+                <div class="h-1.5 rounded-full bg-cream/20 w-4/6"></div>
+                <div class="h-1.5 rounded-full bg-cream/10 w-2/6"></div>
+              </div>
+            </div>
+          </div>
+          <div class="px-4 pb-5">
+            <p class="font-serif text-cream text-lg leading-tight">Job-Board System</p>
+            <p class="font-sans text-cream/50 text-xs mt-1">Sleek user dashboard</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h2 class="font-sans font-bold text-gold track uppercase text-sm mb-7">Services</h2>
+      <div class="flex flex-col gap-5">
+        <span class="font-sans font-bold text-cream text-sm track uppercase">Cybersecurity Analytics</span>
+        <span class="font-sans font-bold text-cream text-sm track uppercase">Software Engineering</span>
+        <span class="font-sans font-bold text-cream text-sm track uppercase">Data Research &amp; AI</span>
+        <span class="font-sans font-bold text-cream text-sm track uppercase">Community Tech Projects</span>
+        <a href="#" class="font-sans text-gold text-xs track uppercase flex items-center gap-2 mt-1 hover:text-cream transition">And More <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION D: MY PROCESS -->
+  <div class="mt-16 md:mt-20">
+    <h2 class="font-sans font-bold text-gold track uppercase text-sm mb-10 text-center md:text-left">My Process</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-y-10 gap-x-4">
+      <div class="text-center sm:text-left relative">
+        <span class="font-serif text-gold text-xl">01</span>
+        <p class="font-sans font-bold text-cream text-xs track uppercase mt-3">Discover</p>
+        <p class="font-sans text-cream/50 text-xs mt-1">Needs analysis</p>
+        <i class="fa-solid fa-arrow-right text-gold/40 text-xs absolute top-[7px] -right-4 hidden sm:block"></i>
+      </div>
+      <div class="text-center sm:text-left relative">
+        <span class="font-serif text-gold text-xl">02</span>
+        <p class="font-sans font-bold text-cream text-xs track uppercase mt-3">Plan</p>
+        <p class="font-sans text-cream/50 text-xs mt-1">Architecture design</p>
+        <i class="fa-solid fa-arrow-right text-gold/40 text-xs absolute top-[7px] -right-4 hidden sm:block"></i>
+      </div>
+      <div class="text-center sm:text-left relative">
+        <span class="font-serif text-gold text-xl">03</span>
+        <p class="font-sans font-bold text-cream text-xs track uppercase mt-3">Build</p>
+        <p class="font-sans text-cream/50 text-xs mt-1">Secure coding</p>
+        <i class="fa-solid fa-arrow-right text-gold/40 text-xs absolute top-[7px] -right-4 hidden sm:block"></i>
+      </div>
+      <div class="text-center sm:text-left relative">
+        <span class="font-serif text-gold text-xl">04</span>
+        <p class="font-sans font-bold text-cream text-xs track uppercase mt-3">Deploy</p>
+        <p class="font-sans text-cream/50 text-xs mt-1">Testing &amp; rollout</p>
+        <i class="fa-solid fa-arrow-right text-gold/40 text-xs absolute top-[7px] -right-4 hidden sm:block"></i>
+      </div>
+      <div class="text-center sm:text-left relative">
+        <span class="font-serif text-gold text-xl">05</span>
+        <p class="font-sans font-bold text-cream text-xs track uppercase mt-3">Impact</p>
+        <p class="font-sans text-cream/50 text-xs mt-1">Measure &amp; scale</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION E: KIND WORDS -->
+  <div class="mt-16 md:mt-20">
+    <h2 class="font-sans font-bold text-gold track uppercase text-sm mb-8 text-center md:text-left">Kind Words</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5">
+
+      <div class="bg-card border hairline rounded-lg p-6 flex flex-col justify-between">
+        <span class="quote-mark text-gold/60 text-5xl">&ldquo;</span>
+        <p class="font-serif italic text-cream text-lg mt-2 mb-6">A relentless problem-solver.</p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center">
+            <span class="font-sans text-gold text-[11px] font-bold">RM</span>
+          </div>
+          <span class="font-sans text-cream/60 text-xs track uppercase">Research Mentor, UCA</span>
+        </div>
+      </div>
+
+      <div class="bg-card border hairline rounded-lg p-6 flex flex-col justify-between">
+        <span class="quote-mark text-gold/60 text-5xl">&ldquo;</span>
+        <p class="font-serif italic text-cream text-lg mt-2 mb-6">Passionate and clear teacher.</p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center">
+            <span class="font-sans text-gold text-[11px] font-bold">S</span>
+          </div>
+          <span class="font-sans text-cream/60 text-xs track uppercase">Student, SPCE</span>
+        </div>
+      </div>
+
+      <div class="bg-card border hairline rounded-lg p-6 flex flex-col justify-between">
+        <span class="quote-mark text-gold/60 text-5xl">&ldquo;</span>
+        <p class="font-serif italic text-cream text-lg mt-2 mb-6">A dedicated professional.</p>
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-gold/15 border border-gold/40 flex items-center justify-center">
+            <span class="font-sans text-gold text-[11px] font-bold">CL</span>
+          </div>
+          <span class="font-sans text-cream/60 text-xs track uppercase">Community Program Lead</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SECTION F: FOOTER -->
+  <div class="mt-16 md:mt-20">
+    <div class="relative rounded-full border hairline bg-card px-6 py-4 md:px-8 md:py-5 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <span class="font-serif italic text-cream text-lg border hairline-cream rounded-full px-6 py-2">Let's connect</span>
+      <a href="mailto:adolatrahimsho@gmail.com" class="bg-gold text-wine font-sans font-bold text-xs track uppercase rounded-full px-7 py-3 flex items-center gap-2 hover:bg-cream transition">
+        Get In Touch <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </a>
+      <span class="diamond-accent absolute -top-2 right-10 hidden sm:block"></span>
+    </div>
+  </div>
+
+  <footer class="mt-10 pb-12 pt-6 border-t hairline flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+    <div class="flex items-center gap-4">
+      <div class="mono-ring rounded-full w-11 h-11 flex items-center justify-center shrink-0">
+        <span class="font-serif text-gold text-sm">AG</span>
+      </div>
+      <div class="font-sans text-cream/60 text-xs leading-relaxed">
+        <p>adolatrahimsho@gmail.com</p>
+        <p>Khorog, GBAO, Tajikistan &middot; Naryn, Kyrgyzstan</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-4">
+      <a href="#" aria-label="LinkedIn" class="w-9 h-9 rounded-full border hairline flex items-center justify-center hover:border-gold transition"><i class="fa-brands fa-linkedin-in text-cream/70 text-sm"></i></a>
+      <a href="https://instagram.com/rahimshoevna" target="_blank" rel="noopener" aria-label="Instagram" class="w-9 h-9 rounded-full border hairline flex items-center justify-center hover:border-gold transition"><i class="fa-brands fa-instagram text-cream/70 text-sm"></i></a>
+      <a href="#" aria-label="GitHub" class="w-9 h-9 rounded-full border hairline flex items-center justify-center hover:border-gold transition"><i class="fa-brands fa-github text-cream/70 text-sm"></i></a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
